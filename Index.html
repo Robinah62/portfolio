@@ -344,7 +344,7 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
       <p class="hero-desc">Building technology solutions that tackle real-world challenges in fintech, edtech, and digital transformation — with a strong foundation in AI & Finance.</p>
       <div class="hero-btns">
         <a href="#contact" class="btn-white">Let's Connect</a>
-        <a href="#" class="btn-outline" id="dl-cv-btn">Download CV</a>
+        <a href="Robinah_Nakabugo_CV.pdf" class="btn-outline" id="dl-cv-btn" download>Download CV</a>
       </div>
       <div class="hero-socials">
         <a href="https://github.com/Robinah62" target="_blank" title="GitHub">
@@ -366,17 +366,12 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
           <!--
             ════════════════════════════
             ADD YOUR PHOTO HERE
-            1. Save your photo as "photo.jpg" in the same folder as this file
-            2. Delete the <div class="ph">...</div> below
-            3. Add this line instead:
-               <img src="photo.jpg" alt="Robinah Nakabugo" />
+            
             ════════════════════════════
           -->
-          <div class="ph">
-            <span class="pi">📸</span>
-            <p><strong>Add your photo</strong><br/>Save as photo.jpg in same folder, then replace this with:<br/></p>
-            <code>&lt;img src="photo.jpg"<br>alt="Robinah Nakabugo"&gt;</code>
-          </div>
+          <div class="photo-box">
+    <img src="robinah.JPEG" alt="Robinah Nakabugo">
+</div>
         </div>
       </div>
     </div>
@@ -1000,10 +995,7 @@ function handleForm(e){
 }
 
 /* ── CV DOWNLOAD NOTE ── */
-document.getElementById('dl-cv-btn').addEventListener('click',function(e){
-  e.preventDefault();
-  alert('To enable CV download:\n\n1. Save your CV as "Robinah_Nakabugo_CV.pdf"\n2. Put it in the same folder as this HTML file\n3. Change the href of this button to:\n   href="Robinah_Nakabugo_CV.pdf"\n   download="Robinah_Nakabugo_CV.pdf"');
-});
+
 </script>
 </body>
 </html>
