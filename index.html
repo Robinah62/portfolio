@@ -575,6 +575,146 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
     border-radius: 8px;
   }
 }
+/* Professional, consistent button styling */
+.nav-cta,
+.view-btn,
+.form-submit {
+  background: #7c3aed;
+  color: #ffffff;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.nav-cta:hover,
+.view-btn:hover,
+.form-submit:hover {
+  background: #6d28d9;
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.22);
+}
+
+.nav-cta:focus-visible,
+.view-btn:focus-visible,
+.form-submit:focus-visible {
+  outline: 3px solid #06b6d4;
+  outline-offset: 3px;
+}
+/* Consistent, professional skill and technology labels */
+.ptag,
+.jcard-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+  border-radius: 7px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: none;
+}
+
+/* Override the old multicoloured project tags */
+.ptag.t-purple,
+.ptag.t-pink,
+.ptag.t-blue,
+.ptag.t-teal,
+.ptag.t-gray {
+  background: #f5f3ff;
+  color: #6d28d9;
+}
+
+/* Keep journey labels unchanged when hovering over cards */
+.jcard:hover .jcard-tag {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border-color: #ddd6fe;
+}
+/* Professional Lucide icons for Services */
+.srv-icon-wrap svg {
+  width: 30px;
+  height: 30px;
+  color: #7c3aed;
+  stroke-width: 1.8;
+  transition: color 0.25s ease;
+}
+
+.srv-card:hover .srv-icon-wrap svg {
+  color: #ffffff;
+}
+/* Professional Journey section heading icons */
+.journey-col-title .jct-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  stroke-width: 1.8;
+}
+/* Professional Journey card icons */
+.jcard-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #7c3aed;
+}
+
+.jcard-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.8;
+}
+/* Professional Lucide icons for contact details */
+.ci-icon svg {
+  width: 22px;
+  height: 22px;
+  color: #67e8f9;
+  stroke-width: 1.8;
+}
+/* Professional Lucide icons for Featured Projects */
+.proj-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #7c3aed;
+}
+
+.proj-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.8;
+}
+/* Professional Journey — calmer institution colours */
+#journey .jcard-org {
+  color: #334155;
+}
+/* Professional Journey — turquoise icons */
+#journey .jcard-icon svg {
+  color: #0891b2;
+  stroke: currentColor;
+}
+/* Professional Journey — subtle date labels */
+#journey .jcard-date {
+  color: #475569;
+  background: #f1f5f9;
+}
+/* Professional Journey — clean skill tags */
+#journey .jcard-tag {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  transition: none;
+}
+
+/* Keep tags consistent when hovering over cards */
+#journey .jcard:hover .jcard-tag {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #e2e8f0;
+}
+
 </style>
 </head>
 <body>
@@ -739,31 +879,31 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         <span class="soft-card-title">Soft Skills &amp; Professional Approach</span>
       </div>
-      <div class="soft-pills-grid">
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Attention to Detail
-        </div>
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Analytical Thinking
-        </div>
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Organisational Skills
-        </div>
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Communication
-        </div>
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Problem-Solving
-        </div>
-        <div class="soft-pill">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Adaptability
-        </div>
+   <div class="soft-pills-grid">
+  <div class="soft-pill">
+    <i data-lucide="search-check"></i>
+    Attention to Detail
+  </div>
+       <div class="soft-pill">
+  <i data-lucide="chart-no-axes-column-increasing"></i>
+  Analytical Thinking
+</div> 
+     <div class="soft-pill">
+  <i data-lucide="calendar-check-2"></i>
+  Organisational Skills
+</div>   
+      <div class="soft-pill">
+  <i data-lucide="messages-square"></i>
+  Communication
+</div>
+       <div class="soft-pill">
+  <i data-lucide="wrench"></i>
+  Problem-Solving
+</div>
+       <div class="soft-pill">
+  <i data-lucide="refresh-cw"></i>
+  Adaptability
+</div>
       </div>
     </div>
 
@@ -787,7 +927,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
   <div class="proj-body">
     <div class="proj-header">
-      <div class="proj-icon">🗂️</div>
+      <div class="proj-icon">
+  <i data-lucide="package"></i>
+</div>
       <span class="proj-status status-live">Completed</span>
     </div>
 
@@ -831,7 +973,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
         <div class="proj-top-bar"></div>
         <div class="proj-body">
           <div class="proj-header">
-            <div class="proj-icon">🛡️</div>
+            <div class="proj-icon">
+  <i data-lucide="shield-check"></i>
+</div>
             <span class="proj-status status-concept">Concept</span>
           </div>
           <div class="proj-title">Silent Guard</div>
@@ -862,7 +1006,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
         <div class="proj-top-bar"></div>
         <div class="proj-body">
           <div class="proj-header">
-            <div class="proj-icon">🚗</div>
+            <div class="proj-icon">
+  <i data-lucide="car-front"></i>
+</div>
             <span class="proj-status status-live">Completed</span>
           </div>
           <div class="proj-title">Park Ease</div>
@@ -893,7 +1039,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
   <div class="proj-body">
     <div class="proj-header">
-      <div class="proj-icon">🛒</div>
+      <div class="proj-icon">
+  <i data-lucide="shopping-cart"></i>
+</div>
       <span class="proj-status status-live">
         Completed
       </span>
@@ -961,14 +1109,18 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
       <!-- ── WORK EXPERIENCE ── -->
       <div>
         <div class="journey-col-title">
-          <div class="jct-icon">💼</div>
+          <div class="jct-icon">
+  <i data-lucide="briefcase-business"></i>
+</div>
           Work Experience
         </div>
         <div class="jcards">
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">🏆</div>
+              <div class="jcard-icon">
+  <i data-lucide="users-round"></i>
+</div>
               <div class="jcard-date">2026</div>
             </div>
             <div class="jcard-title">Team Lead — Final Product Management Project</div>
@@ -990,7 +1142,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">⚡</div>
+              <div class="jcard-icon">
+  <i data-lucide="trophy"></i>
+</div>
               <div class="jcard-date">2025</div>
             </div>
             <div class="jcard-title">Second Runner-up — Girl Code Hackathon</div>
@@ -1012,14 +1166,18 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
       <!-- ── EDUCATION ── -->
       <div>
         <div class="journey-col-title">
-          <div class="jct-icon">🎓</div>
+          <div class="jct-icon">
+  <i data-lucide="graduation-cap"></i>
+</div>
           Education
         </div>
         <div class="jcards">
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">🎓</div>
+              <div class="jcard-icon">
+  <i data-lucide="landmark"></i>
+</div>
               <div class="jcard-date">2025 – 2027</div>
             </div>
             <div class="jcard-title">BBA — Artificial Intelligence & Finance</div>
@@ -1034,7 +1192,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">💻</div>
+              <div class="jcard-icon">
+  <i data-lucide="code-xml"></i>
+</div>
               <div class="jcard-date">Jan – May 2025</div>
             </div>
             <div class="jcard-title">Certificate in Software Engineering </div>
@@ -1050,7 +1210,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">📋</div>
+              <div class="jcard-icon">
+  <i data-lucide="clipboard-list"></i>
+</div>
               <div class="jcard-date">completed June 2026</div>
             </div>
             <div class="jcard-title">Certificate in Product Management</div>
@@ -1065,7 +1227,9 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
 
           <div class="jcard">
             <div class="jcard-top">
-              <div class="jcard-icon">🤖</div>
+              <div class="jcard-icon">
+  <i data-lucide="brain-circuit"></i>
+</div>
               <div class="jcard-date">Completed</div>
             </div>
             <div class="jcard-title">Elements of AI</div>
@@ -1093,17 +1257,23 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
     <p class="sec-sub">Practical Technology solutions I can develop and contribute to</p>
     <div class="srv-grid">
       <div class="srv-card rev">
-        <div class="srv-icon-wrap">🌐</div>
+        <div class="srv-icon-wrap">
+  <i data-lucide="globe"></i>
+</div>
         <div class="srv-title">Web Development</div>
         <div class="srv-desc">Developing responsive websites and web applications using HTML, CSS, python, and Django, with a focus on usability, functionality, and practical business needs.</div>
       </div>
       <div class="srv-card rev">
-        <div class="srv-icon-wrap">💰</div>
+        <div class="srv-icon-wrap">
+  <i data-lucide="wallet"></i>
+</div>
         <div class="srv-title">FinTech Solutions</div>
         <div class="srv-desc">Designing, building and contributing to financial technology projects focused on savings management, financial literacy, and fraud awareness, drawing on experience developing silent Guard with a team.</div>
       </div>
       <div class="srv-card rev">
-        <div class="srv-icon-wrap">📊</div>
+        <div class="srv-icon-wrap">
+  <i data-lucide="chart-no-axes-combined"></i>
+</div>
         <div class="srv-title">Business Automation</div>
         <div class="srv-desc"> Building applications that help businesses manage inventory,
   sales, customer credit, and daily operations, informed by
@@ -1124,21 +1294,27 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
       <!-- Info -->
       <div class="contact-info-block">
         <div class="ci-item">
-          <div class="ci-icon">📍</div>
+          <div class="ci-icon">
+  <i data-lucide="map-pin"></i>
+</div>
           <div>
             <div class="ci-label">Address</div>
             <div class="ci-value">Kampala, Uganda</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">📧</div>
+          <div class="ci-icon">
+  <i data-lucide="mail"></i>
+</div>
           <div>
             <div class="ci-label">Email</div>
             <div class="ci-value"><a href="mailto:robinahnakabugo62@gmail.com">robinahnakabugo62@gmail.com</a></div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">📞</div>
+          <div class="ci-icon">
+  <i data-lucide="phone"></i>
+</div>
           <div>
             <div class="ci-label">Telephone</div>
             <div class="ci-value">
@@ -1148,16 +1324,20 @@ footer{background:#0f172a;padding:2rem 5%;display:flex;align-items:center;justif
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">💼</div>
+          <div class="ci-icon">
+  <i data-lucide="linkedin"></i>
+</div>
           <div>
             <div class="ci-label">LinkedIn</div>
             <div class="ci-value"><a href="https://www.linkedin.com/in/robinah-nakabugo/" target="_blank">linkedin.com/in/robinah-nakabugo</a></div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">🐙</div>
+          <div class="ci-icon">
+  <i data-lucide="github"></i>
+</div>
           <div>
-            <div class="ci-label">GitHub</div>
+            
             <div class="ci-value"><a href="https://github.com/Robinah62" target="_blank">github.com/Robinah62</a></div>
           </div>
         </div>
@@ -1313,7 +1493,7 @@ function cycleGradients(){
   // also update the section bars
   document.querySelectorAll('.sec-bar').forEach(b=>{ b.style.background=g; });
 }
-setInterval(cycleGradients, 2500);
+// Button colours remain static instead of cycling automatically.
 
 /* ── ACTIVE NAV ── */
 const secs=document.querySelectorAll('section[id]');
@@ -1382,6 +1562,11 @@ if (mobileMenuButton && mobileNavigation) {
   });
 }
 
+</script>
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
 </script>
 </body>
 </html>
